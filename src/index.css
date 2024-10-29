@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-container {
+  background-color: #091057;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+.nav-container {
+  background-color: #091057;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 1vb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+.nav-active {
+  text-decoration: underline;
+}
+.nav-search {
+  height: 4vh;
+  color: black;
+  opacity: 70%;
+  padding-left: 1vb;
+  border-radius: 5px;
+  width: 30vb;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5vh;
+  padding-right: 4vb;
+  padding-top: 5px;
+}
