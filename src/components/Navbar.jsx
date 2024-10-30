@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showCurrent, setCurrent] = useState("home");
@@ -9,24 +10,27 @@ const Navbar = () => {
       <div className="text-xl">Cod❌ Jobs</div>
       <div className="nav-items">
         <input className="nav-search" type="text" placeholder="Search..." />
-        <button
+        <Link
           className={showCurrent === "home" ? "nav-active" : ""}
           onClick={() => setCurrent("home")}
+          to="/"
         >
           Home
-        </button>
-        <button
+        </Link>
+        <Link
           className={showCurrent === "jobs" ? "nav-active" : ""}
           onClick={() => setCurrent("jobs")}
+          to="/jobs"
         >
           Jobs
-        </button>
-        <button
+        </Link>
+        <Link
           className={showCurrent === "about" ? "nav-active" : ""}
           onClick={() => setCurrent("about")}
+          to="/about"
         >
           About us
-        </button>
+        </Link>
       </div>
     </div>
   );
